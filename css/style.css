@@ -61,7 +61,10 @@ a {
 	color: #093a58;
 }
 h2,
-h3 {
+h3,
+h4,
+h5 {
+  text-align: center;     
 	margin-top: 0;
 }
 a {
@@ -153,12 +156,12 @@ label.light {
 	color: #093a58;
 }
 
+
 /* ---- Layout Containers ---- */
 
 .main-header {
 	padding-top: .5em;
-	padding-bottom: .5em;
-	display: f
+  padding-bottom: .5em;
 }
 .banner,
 .main-footer {
@@ -190,6 +193,19 @@ label.light {
 }
 .feat-img {
 	border-radius: 5px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.full-width-content .entry-header::after {
+  border-bottom: 1px solid #000;
+  content: '';
+  display: block;
+  margin: 0 auto 40px;
+  padding-bottom: 10px;
+  width: 80px;
 }
 
 /* ================================= 
@@ -232,22 +248,16 @@ label.light {
 @media (min-width: 1025px) {
 	.main-header,
 	.row {
+    display: flex;
 		width: 80%;
 		max-width: 1150px;
-	}
-
-	.main-header {
-			display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.main-nav ul li {
-			flex-direction: row;
-			flex: 1 200px;
-	}
-
-	.main-header {
-		flex-direction: row;
-		justify-content: space-between;
+    flex-direction: row;
+    flex: 1 200px;
 	}
 
 	.primary {
