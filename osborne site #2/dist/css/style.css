@@ -8,8 +8,11 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
-	color: #3a3a3a;
 	margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+
 }
 
 form {
@@ -89,7 +92,6 @@ button {
   text-align: center;
   font-style: normal;
   border-radius: 5px;
-  width: 100%;
   border: 1px solid #3ac162;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
@@ -195,6 +197,28 @@ label.light {
 }
 .feat-img {
 	border-radius: 5px;
+}
+
+.btn {
+  font-size: 0.875em;
+	font-weight: 400;
+  cursor: pointer; 
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+	width: 100%;
+	margin: .5em 0 1em;
+	text-transform: uppercase;
+}
+
+.default {
+  background-color: #55ba52; 
+}
+
+/* ---- Psuedo Elements ---- */
+
+.btn:hover { 
+  opacity: .75; 
 }
 
 
